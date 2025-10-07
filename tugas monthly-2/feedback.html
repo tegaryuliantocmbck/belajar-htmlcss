@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Feedback</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Formulir Umpan Balik</h1>
+      <nav>
+        <a href="index.html">Beranda</a>
+        <a href="biodata.html">Biodata</a>
+        <a href="jadwal.html">Jadwal</a>
+        <a href="galeri.html">Galeri</a>
+        <a href="feedback.html" class="active">Feedback</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="card">
+        <h2>Formulir kontak & saran</h2>
+        <p>
+          Berikan masukan terbaik anda untuk pengembangan website profile
+          ini.semua input bersifat wajib kecuali nama.
+        </p>
+        <form action="https://httpbin.org/post" method="POST">
+          <div class="feedback">
+            <label>Nama:</label>
+            <input type="text" name="nama" />
+          </div>
+
+          <div class="feedback">
+            <label>Email: </label>
+            <input type="number" name="umur" />
+          </div>
+          <div class="feedback">
+            <label>rating kepuasan dari skala (1-10): </label>
+            <input type="number" name="rating" />
+          </div>
+
+          <div class="rekom">
+            <div class="nama-rekom">
+              <p>Rekomendasi Website?</p>
+            </div>
+            <div class="macam-rekom">
+              <label>Ya</label>
+              <input type="radio" name="rekom" value="Ya" />
+              <label>Mungkin</label>
+              <input type="radio" name="rekom" value="Mungkin" />
+              <label>Tidak</label>
+              <input type="radio" name="rekom" value="Tidak" />
+            </div>
+          </div>
+
+          <p>Minat:</p>
+          <label
+            ><input type="checkbox" name="minat" value="Biodata" />
+            Biodata</label
+          >
+          <label
+            ><input type="checkbox" name="minat" value="Galeri" /> Galeri</label
+          >
+          <label
+            ><input type="checkbox" name="minat" value="Jadwal" /> Jadwal</label
+          ><br /><br />
+
+          <label
+            >Pilih Bidang:
+            <select name="bidang">
+              <option>Programmer</option>
+              <option>Pengusaha</option>
+              <option>Desainer</option>
+              <option>pengembang data</option>
+            </select> </label
+          ><br /><br />
+
+          <label
+            >Pesan:<br />
+            <textarea name="pesan" rows="5" cols="40"></textarea></label
+          ><br /><br />
+           <div class="tombol">
+          <button class="atur-ulang" type="reset">Atur Ulang</button>
+          <button class="kirim-feedback" type="submit">Kirim Feedback</button>
+          </div>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>

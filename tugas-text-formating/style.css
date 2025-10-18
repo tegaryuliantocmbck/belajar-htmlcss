@@ -1,0 +1,77 @@
+body {
+    margin: 0px;
+}
+header{
+    margin: 1rem;
+    background-color: rgba(0, 255, 255, 0.105);
+    padding: 12px;
+    border-radius: 12px;
+    text-align: center;
+}
+header h1{
+    font-family: "BBH Sans Hegarty", sans-serif;
+    color: rgba(0, 0, 255, 0.525);
+}
+
+.PW {
+    color: red;
+    text-decoration:underline ;
+}
+
+article{
+    margin: 1rem;
+    background-color:white;
+    box-shadow: 0 3px 7px #909090;
+    padding: 12px;
+    border-radius: 12px;
+    margin-top: 26px;
+   
+}
+article h2{
+     color: rgba(0, 128, 0, 0.664);
+     font-family: sans-serif;
+}
+
+blockquote{
+    font-family: sans-serif;
+    background-color:rgba(95, 158, 160, 0.626);
+    padding: 9px;
+    border-left:8px solid rgba(95, 158, 160, 0.897);
+    width: 93%; 
+    margin: auto;
+    margin-top: 20px;
+
+}
+.notes{
+    font-family: sans-serif;
+    background-color: rgba(255, 0, 0, 0.532);
+    padding: 9px;
+    border-left: 8px solid red;
+    border-radius: 12px;
+     width: 93%; 
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+footer{
+    padding: 1rem;
+    margin: 0px;
+    font-family: sans-serif;
+    line-height: 50px;
+    text-align: right;
+}
+.penulis {
+    font-family:"bismillah" ;
+    font-size: xx-large;
+    color: red;
+    letter-spacing: 2px;
+    
+}
+@font-face {
+    font-family:"bismillah" ;
+    src: url(fonts/Bismillah\ Script.ttf);
+}
+
+.font-tebal{
+    font-weight: bold;
+}

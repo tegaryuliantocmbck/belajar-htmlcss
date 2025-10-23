@@ -1,0 +1,70 @@
+main {
+  background-color: white;
+  border-radius: 11px;
+  box-shadow: 0 3px 7px rgba(128, 128, 128, 0.479);
+  padding: 12px;
+}
+.bag-2 {
+  background-color: white;
+  border-radius: 11px;
+  box-shadow: 0 3px 7px rgba(128, 128, 128, 0.479);
+  padding: 12px;
+  margin: 13px;
+}
+picture {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  border-radius: 12px;
+  background-color: white;
+}
+picture p {
+  margin-top: 0px;
+  font-weight: bold;
+  color: gray;
+}
+.foto-tegar {
+ width: 250px;
+ height: 250px;
+ object-fit: cover;
+ border-radius: 999px;
+  gap: 20px;
+}
+
+.alert button{
+    font-size: 14px;
+    background: none;
+    padding: 8px;
+}
+
+.alert{
+    display: flex;
+    background-color: rgba(0, 0, 255, 0.4);
+    border:2px solid rgba(0, 0, 255, 0.112);
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+   
+
+}
+picture {
+   position: relative;
+}
+code{
+  font-size: larger;
+  position: absolute;
+  top: 30px;
+  background-color: greenyellow;
+  padding: 8px;
+  border-radius: 12px;
+  right:12px ;
+}
+.avatar{
+  position:relative;
+  box-shadow: 0 3px 7px rgba(128, 128, 128, 0.943);
+  border-radius: 12px;
+}
+.avatar:hover{
+  scale: 1.03;
+}

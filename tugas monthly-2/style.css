@@ -17,6 +17,9 @@ header {
 
 nav {
   margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 nav a {
@@ -140,3 +143,79 @@ td {
   background-color: blue;
   border: none;
 }
+.card{
+ font-size: 14px; 
+}
+/* ukuran 1024px => desktop++ */
+@media screen and (min-width: 1024px) {
+  /* masukkan tag / target selector */
+  .site-header{
+    background: pink;
+    color: white;
+  }
+
+  .site-header p{
+    color: white;
+  }
+
+  .card-vid{
+    position: relative;
+  }
+  .card-vid iframe {
+    width: 70%;
+  }
+
+}
+
+/* ukuran 768-1023px => tablet */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  /* masukkan tag / target selector */
+  site-header{
+    background: tomato;
+    color: white;
+  }
+
+  .site-header p{
+    color: white;
+  }
+  .main-naf ul li{
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: calc(33.333%);
+  }
+
+  .card-vid{
+    position: relative;
+  }
+  .card-vid iframe {
+    width: 70%;
+  }
+
+}
+
+/* ukuran max 767px => smartphone */
+@media screen and (max-width: 767px) {
+  /* masukkan tag / target selector */
+
+  .card-vid{
+    position: relative;
+  }
+  .card-vid iframe {
+    width: 70%;
+  }
+
+site-header h1{
+   font-size: 24px;
+   color: pink
+  }
+
+  .site-header p{
+   font-size: 14px;
+  }
+
+  nav {
+    font-size: x-small;
+    margin: 12px;
+    flex-wrap: wrap;
+  }
+

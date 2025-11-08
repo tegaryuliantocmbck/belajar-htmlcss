@@ -1,0 +1,122 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    /* background-color: rgba(5, 75, 179, 0.511); */
+    background: url(https://images.unsplash.com/photo-1485470733090-0aae1788d5af?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8MmslMjB3YWxscGFwZXJ8ZW58MHx8MHx8fDA%3D&fm=jpg&q=60&w=3000);
+    background-size: cover;
+}
+
+/* HEADER */
+header{
+    font-family: sans-serif;
+    padding: 25px;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+}
+header h1{
+    font-weight:900;
+    color:bisque
+}
+nav ul{
+    display: flex;
+    gap: 12px;
+
+}
+nav li{
+    list-style: none;
+}
+nav a{
+    text-decoration: none;
+    color:bisque;
+    position: relative;
+    font-weight: bold;
+}
+nav a::after{
+    content: "";
+    background-color: aqua;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 0%;
+    height: 2px;
+    transition: width 1s cubic-bezier(0.215, 0.610, 0.355, 1);
+
+}
+nav a:hover::after{
+    width: 100%;
+
+}
+/* main */
+main{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 6%;
+    align-items: center;
+}
+.card h1{
+color: white;
+font-size: 48px;
+
+}
+.card p{
+    font-size: 13px;
+    color: white;
+}
+.card h3{
+    color:lightblue;
+    font-size: 32px;
+    
+    
+}
+.foto{
+    scale: 1;
+    transition: scale 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.foto:hover {
+    scale: 1.1;
+    transition: scale 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+
+}
+button{
+    padding: 9px 18px;
+    font-family: sans-serif;
+    font-weight:bold;
+    border: none;
+    border-radius: 8px;
+}
+
+.biru{
+    background-color: transparent;
+    color: lightskyblue;
+    border: 2px solid lightskyblue;
+     transition: background-color 1s cubic-bezier(0.39, 0.575, 0.565, 1);
+
+}
+.biru:hover{
+    background-color: lightskyblue;
+    color: black;
+    transition: background-color 1s cubic-bezier(0.39, 0.575, 0.565, 1);
+    transition: color 1s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+
+}
+.biru-luar{
+    background-color: transparent;
+    color: lightskyblue;
+    border: 2px solid lightskyblue;
+    transition: background-color 1s cubic-bezier(0.39, 0.575, 0.565, 1);
+    transition: color 1s cubic-bezier(0.445, 0.05, 0.55, 0.95);     
+}
+.biru-luar:hover{
+     background-color: lightskyblue;
+    color: black;
+     transition: background-color 1s cubic-bezier(0.39, 0.575, 0.565, 1);
+    transition: color 1s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+
+
+}
